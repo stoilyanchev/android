@@ -214,14 +214,14 @@ public class FileMenuFilter {
         }
 
         // FAVORITES
-        if (mFile == null || synchronizing || mFile.getFavoriteStatus() == OCFile.FavoriteStatus.FAVORITE.getValue()) {
+        if (mFile == null || synchronizing || mFile.getFavoriteStatus() == OCFile.FavoriteStatus.FAVORITE) {
             toHide.add(R.id.action_favorite_file);
         } else {
             toShow.add(R.id.action_favorite_file);
         }
 
         // UNFAVORITES
-        if (mFile == null || synchronizing || mFile.getFavoriteStatus() != OCFile.FavoriteStatus.FAVORITE.getValue()) {
+        if (mFile == null || synchronizing || mFile.getFavoriteStatus() != OCFile.FavoriteStatus.FAVORITE) {
             toHide.add(R.id.action_unfavorite_file);
         } else {
             toShow.add(R.id.action_unfavorite_file);
